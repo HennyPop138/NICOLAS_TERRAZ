@@ -1,0 +1,16 @@
+.black-banner {
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 10px;
+  p {
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .fa-phone {
+    color: $orange;
+  }
+}
