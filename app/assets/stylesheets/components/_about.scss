@@ -1,0 +1,26 @@
+.about {
+  margin-top: 50px;
+  height: 80vh;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  .text {
+    width: 60%;
+    h1 {
+      text-transform: uppercase;
+    }
+    p {
+      margin-right: 50px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.img-about {
+  background-image: url(img-about);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 70vh;
+}
