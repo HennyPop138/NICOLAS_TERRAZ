@@ -44,8 +44,8 @@ nav.nav-desktop li:after {
   height: 0%;
   top: 0;
   left: 0;
-  border-top: 1.5px solid transparent;
-  border-left: 1.5px solid transparent;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
 }
 
 nav.nav-desktop li:before {
@@ -53,8 +53,9 @@ nav.nav-desktop li:before {
   height: 0%;
   right: 0;
   bottom: 0;
-  border-bottom: 1.5px solid transparent;
-  border-right: 1.5px solid transparent;
+
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
 }
 
 nav.nav-desktop li:hover::before,
