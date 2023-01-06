@@ -1,0 +1,65 @@
+nav.nav-desktop ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    display: inline-block;
+    position: relative;
+    margin-right: 2vh;
+    padding: 1vh;
+  }
+}
+
+nav.nav-desktop ul li {
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $dark-blue;
+    margin: 0 10px;
+  }
+}
+
+nav.nav-desktop ul li a,
+nav.nav-desktop ul li a:after,
+nav.nav-desktop ul li a:before {
+  transition: all .5s;
+}
+
+nav.nav-desktop li:after,
+nav.nav-desktop li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+nav.nav-desktop li:after {
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 1.5px solid transparent;
+  border-left: 1.5px solid transparent;
+}
+
+nav.nav-desktop li:before {
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1.5px solid transparent;
+  border-right: 1.5px solid transparent;
+}
+
+nav.nav-desktop li:hover::before,
+nav.nav-desktop li:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: $dark-blue;
+}
