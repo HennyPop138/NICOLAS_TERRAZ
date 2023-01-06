@@ -9,11 +9,12 @@
 // }
 
 .top-bar {
-  height: 10vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: $dark-blue;
 }
 
 .image-robinet {
