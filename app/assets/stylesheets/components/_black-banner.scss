@@ -9,6 +9,14 @@
     text-align: center;
     margin: 0;
     text-transform: uppercase;
+    a{
+      text-decoration: none;
+      color: whitesmoke;
+      :hover {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+    }
   }
   .fa-phone {
     color: $orange;
