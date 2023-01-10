@@ -15,7 +15,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: fit-content;
+  width: fit-cont
   will-change: transform;
 }
 
@@ -30,9 +30,38 @@
   transform: translateY(0);
 }
 
+
+.devis-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: $dark-blue;
+  border: 2px solid $dark-blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-cont
+  will-change: transform;
+}
+
+.devis-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  color: $white;
+
 .orange-button {
   background-color: $orange;
   border: 2px solid $orange;
+
 }
 
 .blue-button {
