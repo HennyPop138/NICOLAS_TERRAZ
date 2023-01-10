@@ -15,7 +15,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: fit-cont
+  width: fit-content;
   will-change: transform;
 }
 
@@ -49,7 +49,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: fit-cont
+  width: fit-content;
   will-change: transform;
 }
 
@@ -58,13 +58,14 @@
   transform: translateY(-2px);
   color: $white;
 
-.orange-button {
-  background-color: $orange;
-  border: 2px solid $orange;
+  .orange-button {
+    background-color: $orange;
+    border: 2px solid $orange;
 
-}
+  }
 
-.blue-button {
-  background-color: $dark-blue;
-  border: 2px solid $dark-blue;
+  .blue-button {
+    background-color: $dark-blue;
+    border: 2px solid $dark-blue;
+  }
 }
