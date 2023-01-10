@@ -20,7 +20,7 @@
       <div class="big-banner-container">
         <div class="top-bar">
           <div class="logo">
-            <h2>TERRAZ<br>PLOMBERIE</h2>
+            <h2>TERRAZ PLOMBERIE</h2>
           </div>
           <!-- NAV BAR -->
           <nav class="nav-desktop">
@@ -37,30 +37,46 @@
             <h1>Plomberie,<br>Chauffage &<br>Climatisation</h1>
             <p>Notre entreprise est spécialisée dans les domaines de la plomberie, du chauffage et de la climatisation.</p>
             <p>Nous proposons des services de qualité pour répondre à tous vos besoins.</p>
+            <i class="fa-light fa-temperature-snow"></i>
             <!-- BUTTONS RDV / DEVIS -->
             <div class="cta-buttons">
-              <a href="#" class="rdv-button">Prendre RDV</a>
-              <a href="#" class="devis-button">Devis gratuit</a>
+              <a href="#" class="button orange-button">Prendre RDV</a>
+              <a href="#" class="button blue-button">Devis gratuit</a>
             </div>
           </div>
           <%= image_tag("robinet-resized.png", class: "image-robinet") %>
         </div>
+        <!-- NAVCARDS -->
+        <div class="nav-cards">
+          <div class="nav-card">
+            <%= image_tag("plumber-blue.png") %>
+            <h2>PLOMBERIE</h2>
+          </div>
+          <div class="nav-card">
+            <%= image_tag("radiator-blue.png") %>
+            <h2>CHAUFFAGE</h2>
+          </div>
+          <div class="nav-card">
+            <%= image_tag("airconditioner-blue.png") %>
+            <h2>CLIMATISATION</h2>
+          </div>
+        </div>
       </div>
     </div>
 
-      <!-- À PROPOS -->
+
+    <!-- À PROPOS -->
     <div class="bg-2">
       <div class="about">
         <div class="text">
           <h1>À propos</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada ullamcorper iaculis. Fusce tempus dapibus tempus. Proin eget ipsum at augue feugiat ornare.<br>
-          <br>
-          Proin viverra vehicula nisl a faucibus. Quisque iaculis sapien in nisl ullamcorper, et molestie libero vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada ullamcorper iaculis.</p>
+          <p>&nbsp;&nbsp;&nbsp;Nicolas Terraz est un professionnel expérimenté dans les domaines de la plomberie, du chauffage et de la climatisation. Basé à Marseille, il propose ses services aux particuliers et aux entreprises de la région. Avec plus de 10 ans d'expérience, il est reconnu pour sa qualité de travail et son sérieux.</p>
+          <p>&nbsp;&nbsp;&nbsp;En tant que plombier, chauffagiste et climaticien diplômé et agréé, Nicolas Terraz vous garantit une intervention rapide et efficace. Que vous ayez besoin d'une réparation, d'un entretien ou d'une installation, il saura répondre à vos attentes et vous conseiller sur les meilleures solutions adaptées à vos besoins. N'hésitez pas à le contacter pour tous vos projets de plomberie, chauffage et climatisation à Marseille et ses alentours.</p>
           <div class="cta-buttons">
-            <a href="#" class="rdv-button">Prendre RDV</a>
+            <a href="#" class="button blue-button">Prendre RDV</a>
           </div>
         </div>
-        <div class="img-about"></div>
+        <%= image_tag("img-about.jpg", class: "img-about") %>
       </div>
     </div>
 
