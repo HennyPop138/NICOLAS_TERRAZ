@@ -4,13 +4,12 @@
   background: $white;
 }
 
-.name {
-  color: $black;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15vh;
-  h2 {
-    font-size: 1.8em;
+.logo-black {
+  text-align: center;
+
+  .logo-b {
+    width: 45vh;
+    margin-bottom: 10vh
   }
 }
 
