@@ -1,10 +1,15 @@
-.name {
-  color: $black;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15vh;
-  h2 {
-    font-size: 1.8em;
+.bg-6 {
+  width: 100%;
+  height: 60vh;
+  background: $white;
+}
+
+.logo-black {
+  text-align: center;
+
+  .logo-b {
+    width: 45vh;
+    margin-bottom: 10vh
   }
 }
 
@@ -27,7 +32,6 @@
         text-decoration: none;
         color: $black;
       }
-
     }
   }
 }

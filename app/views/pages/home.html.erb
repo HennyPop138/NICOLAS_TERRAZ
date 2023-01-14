@@ -19,15 +19,15 @@
     <div class="radient-bg">
       <div class="big-banner-container">
         <div class="top-bar">
-          <div class="logo">
-            <h2>TERRAZ PLOMBERIE</h2>
+          <div class="logo-blue">
+          <%= image_tag("logo-blue.jpg", class: "logo-bleu") %>
           </div>
           <!-- NAV BAR -->
           <nav class="nav-desktop">
             <ul>
               <li><a href="#">À propos</a></li>
-              <li><a href="#">Chauffage</a></li>
               <li><a href="#">Plomberie</a></li>
+              <li><a href="#">Chauffage</a></li>
               <li><a href="#">Climatisation</a></li>
             </ul>
           </nav>
@@ -49,15 +49,18 @@
         <!-- NAVCARDS -->
         <div class="nav-cards">
           <div class="nav-card">
-            <%= image_tag("plumber-blue.png") %>
+            <%= image_tag("plumber-blue.png", :class => "blue-card") %>
+            <%= image_tag("plumber-orange.png", :class => "orange-card") %>
             <h2>PLOMBERIE</h2>
           </div>
           <div class="nav-card">
-            <%= image_tag("radiator-blue.png") %>
+            <%= image_tag("radiator-blue.png", :class => "blue-card") %>
+            <%= image_tag("radiator-orange.png", :class => "orange-card") %>
             <h2>CHAUFFAGE</h2>
           </div>
           <div class="nav-card">
-            <%= image_tag("airconditioner-blue.png") %>
+            <%= image_tag("airconditioner-blue.png", :class => "blue-card") %>
+            <%= image_tag("airconditioner-orange.png", :class => "orange-card") %>
             <h2>CLIMATISATION</h2>
           </div>
         </div>
@@ -101,8 +104,8 @@
 
     <!-- FOOTER -->
     <div class="white-bg">
-      <div class="name">
-        <h2>TERRAZ<br>PLOMBERIE</h2>
+      <div class="logo-black">
+        <%= image_tag("logo-black.jpg", class: "logo-b") %>
       </div>
       <div class="column-footer">
         <div class="services">

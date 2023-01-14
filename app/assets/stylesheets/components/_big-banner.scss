@@ -5,8 +5,8 @@
   align-items: center;
   color: $dark-blue;
 
-  h2 {
-    margin-left: 10vh;
+  .logo-bleu {
+    width: 65vh;
   }
 }
 
@@ -54,6 +54,10 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition: 0.15s ease-in-out;
 
+  .orange-card {
+    display: none;
+  }
+
   img {
     width: 50%;
     height: 50%;
@@ -69,5 +73,21 @@
 .nav-card:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
   transform: translateY(2px);
-  background-color: #DEF1F9;
+  color: $orange;
+  cursor: pointer;
+
+  img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+
+  .blue-card {
+    display: none;
+  }
+
+  .orange-card {
+    display: inline;
+  }
+
 }
