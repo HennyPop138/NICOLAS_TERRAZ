@@ -1,0 +1,16 @@
+<!-- NAV BAR -->
+<div class="top-bar">
+  <div class="logo-blue">
+    <%= link_to root_path do %>
+      <%= image_tag("logo-blue.jpg", class: "logo-bleu") %>
+    <% end %>
+  </div>
+  <nav class="nav-desktop">
+    <ul>
+      <li><%= link_to "À propos", about_path %></li>
+      <li><%= link_to "Plomberie", plomberie_path %></li>
+      <li><%= link_to "Chauffage", chauffage_path %></li>
+      <li><%= link_to "Climatisation", climatisation_path %></li>
+    </ul>
+  </nav>
+</div>
