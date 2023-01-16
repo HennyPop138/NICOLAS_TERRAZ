@@ -16,4 +16,10 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def send_contact
+    message = params[:message]
+    ContactMailer.contact(message).deliver_now
+    redirect_to root_path
+  end
 end
