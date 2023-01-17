@@ -25,6 +25,5 @@ class PagesController < ApplicationController
                       subject: params[:subject] }
     ContactMailer.contact(contact_infos).deliver_now
     flash[:notice] = 'Votre demande de contact a bien été envoyée, nous vous répondrons dans les plus brefs délais.'
-    redirect_to root_path
   end
 end
