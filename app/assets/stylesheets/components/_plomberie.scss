@@ -1,11 +1,12 @@
 .plomberie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: justify;
   margin: 10vh 20vh;
+  float:right;
 
-  img {
-    width: 50%;
+  .plomberie-img {
+    width: 50vh;
+    float:left;
+    margin-top: 15vh;
+    margin-right: 10vh;
   }
 }
