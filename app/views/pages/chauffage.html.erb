@@ -5,15 +5,33 @@
 
 <div class="radient-bg">
   <%= render "shared/top-bar" %>
-  <ul>
-    <li>Installation de nouvelles chaudières</li>
-    <li>Réparation de chaudières existantes</li>
-    <li>Entretien et maintenance de chaudières</li>
-    <li>Remplacement de chaudières</li>
-    <li>Installation de radiateurs</li>
-    <li>Réparation de radiateurs</li>
-    <li>Installation de thermostats</li>
-    <li>Réparation de thermostats</li>
-    <li>Inspection de la cheminée et du conduit de fumée.</li>
-  </ul>
+
+  <div class="task-list">
+    <h1>Plomberie</h1>
+    <div class="list">
+      <div class="row-1">
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de nouvelles chaudières</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de chaudières existantes</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Entretien et maintenance de chaudières</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Remplacement de chaudières</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de radiateurs</p>
+      </div>
+      <div class="row-2">
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de radiateurs</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de thermostats</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de thermostats</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Inspection de la cheminée et du conduit de fumée</p>
+      </div>
+    </div>
+    <a href="tel: 07 60 04 25 64" class="button orange-button"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Appeler</a>
+    <a href="/contact" class="button blue-button"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Ecrire un message</a>
+  </div>
+  <div class="illustrations">
+    <%= image_tag("chaudiere.jpg", class: "chaudière") %>
+   <%= image_tag("outils.jpg", class: "outils") %>
+    <%= image_tag("radiator.jpg", class: "radiator") %>
+    <%= image_tag("thermostat", class: "thermostar") %>
+    <%= image_tag("pipe.jpg", class: "pipe") %>
+    <%= image_tag("radiator-2.jpg", class: "radiator-2") %>
+  </div>
 </div>
