@@ -1,4 +1,3 @@
-<!-- BLACK BANNER -->
 <div class="black-banner">
   <p>lundi au jeudi 8h - 18h, vendredi 8h - 17h</p>
   <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;<a href="tel: 07 60 04 25 64">07 60 04 25 64</a></p>
@@ -6,19 +5,39 @@
 
 <div class="radient-bg">
   <%= render "shared/top-bar" %>
-  <ul>
-    <li>Réparation de fuites d'eau</li>
-    <li>Remplacement de tuyaux endommagés</li>
-    <li>Installation de nouvelles robinetteries</li>
-    <li>Débouchage de canalisations obstruées</li>
-    <li>Réparation ou remplacement de chasses d'eau</li>
-    <li>Installation ou remplacement de ballons d'eau chaude</li>
-    <li>Installation de radiateurs</li>
-    <li>Installation de lave-vaisselle ou de lave-linge</li>
-    <li>Mise en place de dispositifs de filtration d'eau</li>
-    <li>Réparation ou remplacement de WC</li>
-    <li>Installation de douches ou de baignoires</li>
-    <li>Réparation de fuites dans les canalisations souterraines</li>
-    <li>Contrôle annuel de la plomberie et de la chaudière</li>
-  </ul>
+
+  <div class="task-list">
+    <h1>Plomberie</h1>
+    <div class="list">
+      <div class="row-1">
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de fuites d'eau</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Remplacement de tuyaux endommagés</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de nouvelles robinetteries</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Débouchage de canalisations obstruées</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation ou remplacement de chasses d'eau</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation ou remplacement de ballons d'eau chaude</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de radiateurs</p>
+      </div>
+      <div class="row-2">
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de lave-vaisselle ou de lave-linge</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Mise en place de dispositifs de filtration d'eau</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation ou remplacement de WC</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de douches ou de baignoires</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de fuites dans les canalisations souterraines</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Contrôle annuel de la plomberie et de la chaudière</p>
+      </div>
+    </div>
+    <a href="tel: 07 60 04 25 64" class="button orange-button"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Appeler</a>
+    <a href="/contact" class="button blue-button"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Ecrire un message</a>
+  </div>
+
+  <div class="illustrations">
+    <%= image_tag("waching-machine.jpg", class: "waching-machine") %>
+    <%= image_tag("water-drop.jpg", class: "water-drop") %>
+    <%= image_tag("robinet-onglet.jpg", class: "robinet-onglet") %>
+    <%= image_tag("pipe.jpg", class: "pipe") %>
+    <%= image_tag("outils.jpg", class: "outils") %>
+    <%= image_tag("sdb.jpg", class: "sdb") %>
+
+  </div>
 </div>
