@@ -1,14 +1,12 @@
-<h1>Nouveau message de contact</h1>
-
-<p>Un utilisateur a rempli le formulaire de contact et vous a envoyé un message.</p>
-
-<h2>Informations de l'utilisateur</h2>
-<p>Nom : <%= @name %></p>
-<p>Email : <%= @email %></p>
-<p>Téléphone : <%= @tel %></p>
-
-<h2>Objet</h2>
+<p>Bonjour,<p>
+<p>Un utilisateur a rempli le formulaire de contact et vous a envoyé un message, vous trouverez ci-dessous les coordonnées de l'utilisateur.</p>
+<br>
+<p><strong>Nom : </strong><%= @name %></p>
+<p><strong>Email : </strong><%= @email %></p>
+<p><strong>Téléphone : </strong><%= @tel %></p>
+<br>
+<p><strong>Objet</strong></p>
 <p><%= @subject %></p>
-
-<h2>Message</h2>
+<br>
+<p><strong>Message</strong></p>
 <p><%= @message %></p>
