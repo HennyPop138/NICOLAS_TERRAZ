@@ -8,7 +8,6 @@
   color: $white;
   cursor: pointer;
   display: inline-block;
-  padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -39,4 +38,18 @@
 .blue-button {
   background-color: $dark-blue;
   border: 2px solid $dark-blue;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 600px) {
+  .button {
+    padding: 15px 25px;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  .button {
+    padding: 10px 20px;
+  }
 }
