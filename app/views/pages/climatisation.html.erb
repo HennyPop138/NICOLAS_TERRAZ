@@ -5,16 +5,35 @@
 
 <div class="radient-bg">
   <%= render "shared/top-bar" %>
-  <ul>
-    <li>Installation de nouveaux systèmes de climatisation</li>
-    <li>Réparation de systèmes de climatisation existants</li>
-    <li>Entretien et maintenance de systèmes de climatisation</li>
-    <li>Remplacement de systèmes de climatisation</li>
-    <li>Installation de thermostats</li>
-    <li>Réparation de thermostats</li>
-    <li>Nettoyage et remplacement des filtres de climatisation</li>
-    <li>Entretien des filtres de climatisation</li>
-    <li>Réparation de fuites dans les conduits de climatisation</li>
-    <li>Réglage de la pression des fluides frigorigènes</li>
-  </ul>
+
+  <div class="task-list">
+    <h1>Climatisation</h1>
+    <div class="list">
+      <div class="row-1">
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de nouveaux systèmes de climatisation</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de systèmes de climatisation existants</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Entretien et maintenance de systèmes de climatisation</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Remplacement de systèmes de climatisation</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de thermostats</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de thermostats</p>
+      </div>
+      <div class="row-2">
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Installation de thermostats</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Nettoyage et remplacement des filtres de climatisation</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Entretien des filtres de climatisation</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réparation de fuites dans les conduits de climatisation</p>
+        <p><i class="fa fa-check"></i>&nbsp;&nbsp;Réglage de la pression des fluides frigorigènes</p>
+      </div>
+    </div>
+    <a href="tel: 07 60 04 25 64" class="button orange-button"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Appeler</a>
+    <a href="/contact" class="button blue-button"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Ecrire un message</a>
+  </div>
+  <div class="illustrations-climatisation">
+    <%= image_tag("thermostat-3.jpg", class: "thermostat-3") %>
+    <%= image_tag("outils.jpg", class: "outils") %>
+    <%= image_tag("clim-1.jpg", class: "clim-1") %>
+    <%= image_tag("clim-2", class: "clim-2") %>
+    <%= image_tag("pipe-2.jpg", class: "pipe-2") %>
+    <%= image_tag("clim-3.jpg", class: "clim-3") %>
+  </div>
 </div>
