@@ -14,17 +14,18 @@
   }
 }
 
-/* MOBILE */
+//* MOBILE */
 @media screen and (max-width: 600px) {
   .plomberie {
     text-align: justify;
     margin: 4vh 5vh;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    float:right;
+
     .plomberie-img {
-      width: 30vh;
-      margin-top: 5vh;
+      float:left;
+      width: 25vh;
+      margin-top: 10vh;
+      margin-right: 2vh;
     }
   }
 }

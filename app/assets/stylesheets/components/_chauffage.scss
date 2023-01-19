@@ -1,12 +1,31 @@
-.chauffage {
-  text-align: justify;
-  margin: 10vh 20vh;
-  float:left;
+/* DESKTOP */
+@media screen and (min-width: 600px) {
+  .chauffage {
+    text-align: justify;
+    margin: 10vh 20vh;
+    float:left;
 
-  .chauffage-img {
-    width: 30vh;
-    float:right;
-    margin-left: 10vh;
-    margin-top: 6vh;
+    .chauffage-img {
+      width: 30vh;
+      float:right;
+      margin-top: 10vh;
+      margin-left: 8vh;
+    }
+  }
+}
+
+//* MOBILE */
+@media screen and (max-width: 600px) {
+  .chauffage {
+    text-align: justify;
+    margin: 4vh 5vh;
+    float:left;
+
+    .chauffage-img {
+      float:right;
+      width: 25vh;
+      margin-top: 10vh;
+      margin-left: 2vh;
+    }
   }
 }
