@@ -1,7 +1,5 @@
-footer {
-  margin-top: 20vh;
-  .logo-black {
-  text-align: center;
+.logo-black {
+    text-align: center;
 
     .logo-b {
       width: 30vh;
@@ -9,41 +7,82 @@ footer {
     }
   }
 
-  .column-footer {
-    margin: 4vh;
-    display: flex;
-    justify-content: space-between;
-    h3 {
-      font-size: 1.2em;
-      margin-bottom: 3vh;
-    }
-
-    p {
-      font-size: 0.8em;
-      line-height: 2.5em;
-      a{
-        text-decoration: none;
-        color: $black;
-        :hover {
-          text-decoration: none;
-          color: $black;
-        }
-      }
-    }
-  }
-
-  .footer-banner {
+.footer-banner {
     background-color: $dark-blue;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 30px 10px;
-    p{
+    p {
       color: whitesmoke;
       opacity: 70%;
       text-align: center;
       margin: 0;
       font-size: 0.8em;
+    }
+  }
+
+/* DESKTOP */
+@media screen and (min-width: 600px) {
+  footer {
+    margin-top: 20vh;
+
+    .column-footer {
+      margin: 4vh;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        text-transform: uppercase;
+        font-size: 1.1em;
+        margin-bottom: 3vh;
+      }
+
+      p {
+        font-size: 0.8em;
+        line-height: 2.5em;
+        opacity: 60%;
+        a {
+          text-decoration: none;
+          color: $black;
+          :hover {
+            text-decoration: none;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+//* MOBILE */
+@media screen and (max-width: 600px) {
+  footer {
+    margin-top: 10vh;
+
+    .column-footer {
+      margin: 3vh;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-bottom: 1vh;
+        margin-top: 2vh;
+      }
+
+      p {
+        font-size: 0.8em;
+        line-height: 2.3em;
+        opacity: 60%;
+        a {
+          text-decoration: none;
+          color: $black;
+          :hover {
+            text-decoration: none;
+            color: $black;
+          }
+        }
+      }
     }
   }
 }
