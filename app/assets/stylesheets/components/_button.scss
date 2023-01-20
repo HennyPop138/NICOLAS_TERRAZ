@@ -41,15 +41,18 @@
 }
 
 /* DESKTOP */
-@media screen and (min-width: 600px) {
+@media screen
+and (min-device-width: 1200px) {
   .button {
     padding: 15px 25px;
   }
 }
 
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen
+and (min-device-width: 375px)
+and (max-device-width: 850px) {
   .button {
-    padding: 10px 20px;
+    padding: 8px 10px;
   }
 }

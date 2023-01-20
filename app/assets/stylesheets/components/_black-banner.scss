@@ -24,16 +24,24 @@
 }
 
 /* DESKTOP */
-@media screen and (min-width: 600px) {
+@media screen
+and (min-device-width: 1200px) {
   .black-banner {
     padding: 10px 30px 10px;
-
+    p{
+      font-size: 14px;
+    }
   }
 }
 
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen
+and (min-device-width: 375px)
+and (max-device-width: 850px) {
   .black-banner {
     padding: 1vh;
+    p{
+      font-size: 11px;
+    }
   }
 }
