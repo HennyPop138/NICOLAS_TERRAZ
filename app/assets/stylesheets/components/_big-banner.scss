@@ -1,93 +1,198 @@
-.top-bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: $dark-blue;
+/* DESKTOP */
+@media screen
+and (min-device-width: 1200px) {
+  .top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $dark-blue;
 
-  .logo-bleu {
-    width: 30vh;
+    .logo-bleu {
+      width: 30vh;
+    }
+  }
+
+  .image-robinet {
+    width: 30%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 30vh;
+    z-index: 0;
+  }
+
+  .bottom-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    align-self: flex-start;
+    margin: 20vh;
+    color: $dark-blue;
+    z-index: 1;
+  }
+
+  .nav-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20vh;
+    margin-bottom: 20vh;
+  }
+
+  .nav-card {
+    width: 30%;
+    background-color: $white;
+    color: $dark-blue;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.15s ease-in-out;
+
+    .orange-card {
+      display: none;
+    }
+
+    img {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .nav-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+    transform: translateY(2px);
+    color: $orange;
+    cursor: pointer;
+
+    img {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
+
+    .blue-card {
+      display: none;
+    }
+
+    .orange-card {
+      display: inline;
+    }
+
   }
 }
 
-.image-robinet {
-  width: 30%;
-  object-fit: cover;
-  position: absolute;
-  right: 0;
-  top: 30vh;
-  z-index: 0;
-}
+/* MOBILE */
+@media screen
+and (min-device-width: 375px)
+and (max-device-width: 850px) {
+  .top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $dark-blue;
 
-.bottom-bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.content {
-  align-self: flex-start;
-  margin: 20vh;
-  color: $dark-blue;
-  z-index: 1;
-}
-
-.nav-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20vh;
-  margin-bottom: 20vh;
-}
-
-.nav-card {
-  width: 30%;
-  background-color: $white;
-  color: $dark-blue;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  transition: 0.15s ease-in-out;
-
-  .orange-card {
-    display: none;
+    .logo-bleu {
+      width: 15vh;
+    }
   }
 
-  img {
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
+  .image-robinet {
+    width: 30%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    z-index: 0;
   }
 
-  h2 {
-    font-size: 24px;
-    font-weight: 400;
-  }
-}
-
-.nav-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
-  transform: translateY(2px);
-  color: $orange;
-  cursor: pointer;
-
-  img {
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
+  .bottom-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .blue-card {
-    display: none;
+  .content {
+    align-self: flex-start;
+    margin: 13vh 2vh;
+    color: $dark-blue;
+    z-index: 1;
   }
 
-  .orange-card {
-    display: inline;
+  .nav-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.2vh;
+    margin-bottom: 12vh;
+    h2 {
+      font-size: 13px !important;
+      margin-top: 1vh;
+    }
   }
 
+  .nav-card {
+    width: 30%;
+    background-color: $white;
+    color: $dark-blue;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.15s ease-in-out;
+
+    .orange-card {
+      display: none;
+    }
+
+    img {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .nav-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+    transform: translateY(2px);
+    color: $orange;
+    cursor: pointer;
+
+    img {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
+
+    .blue-card {
+      display: none;
+    }
+
+    .orange-card {
+      display: inline;
+    }
+
+  }
 }
