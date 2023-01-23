@@ -1,5 +1,6 @@
 /* DESKTOP */
-@media screen and (min-width: 600px) {
+@media screen
+and (min-device-width: 1200px) {
   .about {
     display: flex;
     justify-content: center;
@@ -32,7 +33,9 @@
 }
 
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen
+and (min-device-width: 375px)
+and (max-device-width: 850px) {
   .about {
     display: flex;
     flex-direction: column;
