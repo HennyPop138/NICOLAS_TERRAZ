@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get 'chauffage', to: 'pages#chauffage'
   get 'climatisation', to: 'pages#climatisation'
   get 'contact', to: 'pages#contact'
+  get 'confirmation', to: 'pages#confirmation'
   post 'send_contact', to: 'pages#send_contact'
 end
