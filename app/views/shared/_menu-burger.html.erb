@@ -1,0 +1,20 @@
+<!-- MOBILE NAVBAR -->
+<nav class="navmobile" data-controller="open-burger-menu" data-open-burger-menu-target="burgerMenu">
+  <div id="hamburger-icon" data-action="click->open-burger-menu#toggleMobileMenu">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+    <ul class="mobile-menu">
+      <li>
+        <%= link_to root_path do %>
+          <i class="fa-solid fa-house"></i>
+        <% end %>
+      </li>
+      <li><%= link_to "À PROPOS", about_path %></li>
+      <li><%= link_to "PLOMBERIE", plomberie_path %></li>
+      <li><%= link_to "CHAUFFAGE", chauffage_path %></li>
+      <li><%= link_to "CLIMATISATION", climatisation_path %></li>
+      <li><%= link_to "CONTACT", contact_path %></li>
+    </ul>
+  </div>
+</nav>

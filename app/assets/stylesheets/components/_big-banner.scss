@@ -98,22 +98,10 @@ and (min-device-width: 1200px) {
 @media screen
 and (min-device-width: 375px)
 and (max-device-width: 1200px) {
-  .top-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $dark-blue;
-
-    .logo-bleu {
-      width: 15vh;
-    }
-  }
 
   .image-robinet {
     width: 30%;
     object-fit: cover;
-    position: absolute;
     right: 0;
     top: 20vh;
     z-index: 0;
