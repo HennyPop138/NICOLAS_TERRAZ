@@ -49,9 +49,8 @@ and (min-device-width: 1200px) {
     background-color: $white;
     color: $dark-blue;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    text-decoration: none;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 0.15s ease-in-out;
@@ -67,7 +66,7 @@ and (min-device-width: 1200px) {
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 2vw;
       font-weight: 400;
     }
   }
@@ -98,7 +97,7 @@ and (min-device-width: 1200px) {
 /* MOBILE */
 @media screen
 and (min-device-width: 375px)
-and (max-device-width: 850px) {
+and (max-device-width: 1200px) {
   .top-bar {
     width: 100%;
     display: flex;
@@ -151,9 +150,8 @@ and (max-device-width: 850px) {
     background-color: $white;
     color: $dark-blue;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    text-decoration: none;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 0.15s ease-in-out;

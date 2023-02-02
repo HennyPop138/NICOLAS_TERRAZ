@@ -5,12 +5,17 @@
 
 <div class="radient-bg">
   <%= render "shared/top-bar" %>
-  <form action="/send_contact" method="post">
-    <input name="email" type="email" class="form-control mb-1" placeholder="Your email">
-    <input name="name" type="text" class="form-control mb-1" placeholder="Your name">
-    <input name="tel" type="tel" class="form-control mb-1" placeholder="Your number">
-    <input name="subject" type="text" class="form-control mb-1" placeholder="Object">
-    <textarea name="message" class="form-control" placeholder="Your message"></textarea>
-    <button type="submit">Submit</button>
-  </form>
+  <div class="container contact-form">
+    <form action="/send_contact" method="post">
+      <input name="email" type="email" class="form-control mb-1" placeholder="Adresse mail">
+      <input name="name" type="text" class="form-control mb-1" placeholder="Nom">
+      <input name="tel" type="tel" class="form-control mb-1" placeholder="Numéro de téléphone">
+      <input name="subject" type="text" class="form-control mb-1" placeholder="Objet">
+      <textarea name="message" class="form-control" placeholder="Informations complémentaires"></textarea>
+      <button type="submit" class="button blue-button">Envoyer</button>
+    </form>
+  </div>
 </div>
+
+<%# FOOTER %>
+<%= render "shared/footer" %>
