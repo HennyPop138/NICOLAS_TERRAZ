@@ -99,7 +99,7 @@ and (min-device-width: 1200px) {
 @media screen
 and (min-device-width: 375px)
 and (max-device-width: 850px) {
-  .top-bar {
+  .top-bar-mobile {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -114,7 +114,6 @@ and (max-device-width: 850px) {
   .image-robinet {
     width: 30%;
     object-fit: cover;
-    position: absolute;
     right: 0;
     top: 20vh;
     z-index: 0;
