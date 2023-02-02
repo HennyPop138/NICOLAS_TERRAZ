@@ -7,10 +7,16 @@
   </div>
   <nav class="nav-desktop">
     <ul>
+      <li>
+        <%= link_to root_path do %>
+          <i class="fa-solid fa-home"></i>
+        <% end %>
+      </li>
       <li><%= link_to "À propos", about_path %></li>
       <li><%= link_to "Plomberie", plomberie_path %></li>
       <li><%= link_to "Chauffage", chauffage_path %></li>
       <li><%= link_to "Climatisation", climatisation_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
     </ul>
   </nav>
 </div>
