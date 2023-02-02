@@ -73,8 +73,9 @@ nav.navmobile {
   flex-direction: column;
 }
 nav.navmobile #hamburger-icon {
-  margin: 1vh;
+  margin-right: 4vh;
   cursor: pointer;
+  text-align: -webkit-right;
 }
 
 nav.navmobile #hamburger-icon div {
