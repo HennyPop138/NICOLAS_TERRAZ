@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <meta HTTP-EQUIV="REFRESH" content="4; url=<%= root_path %>">
+  </head>
+
+  <body>
+    <div class="radient-bg">
+      <%= render "shared/top-bar" %>
+      <%= render "shared/menu-burger" %>
+
+      <div class="confirmation-message container">
+        <%= image_tag("happy-plumber.png", class: "happy-plumber") %>
+        <h1>Merci pour votre message !</h1>
+        <p>Nous reviendrons vers vous dans les plus brefs délais.</p>
+        <p>Vous allez être redirigé vers notre site dans quelques secondes.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -4,15 +4,16 @@
 </div>
 
 <div class="radient-bg">
-<%= render "shared/menu-burger"%>
+  <%= render "shared/menu-burger"%>
   <%= render "shared/top-bar" %>
+
   <div class="container contact-form">
     <form action="/send_contact" method="post">
-      <input name="email" type="email" class="form-control mb-1" placeholder="Adresse mail">
-      <input name="name" type="text" class="form-control mb-1" placeholder="Nom">
-      <input name="tel" type="tel" class="form-control mb-1" placeholder="Numéro de téléphone">
-      <input name="subject" type="text" class="form-control mb-1" placeholder="Objet">
-      <textarea name="message" class="form-control" placeholder="Informations complémentaires"></textarea>
+      <input name="email" type="email" class="form-control mb-1" placeholder="Adresse mail" required>
+      <input name="name" type="text" class="form-control mb-1" placeholder="Nom" required>
+      <input name="tel" type="tel" class="form-control mb-1" placeholder="Numéro de téléphone" required>
+      <input name="subject" type="text" class="form-control mb-1" placeholder="Objet" required>
+      <textarea name="message" class="form-control" placeholder="Informations complémentaires" required></textarea>
       <button type="submit" class="button blue-button">Envoyer</button>
     </form>
   </div>
