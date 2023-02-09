@@ -8,7 +8,7 @@ Rails.application.configure do
 
   # Mailer GMAIL configuration
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'http://www.terraz-plomberie.fr' }
+  config.action_mailer.default_url_options = { host: 'https://www.terraz-plomberie.fr' }
   # or your custom domain name eg. "www.yourdomain.com"
 
 
