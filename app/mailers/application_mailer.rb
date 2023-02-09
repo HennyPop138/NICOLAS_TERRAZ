@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "ananjules.mignot@gmail.com"
+  default from: "contact@terraz-plomberie.fr"
   layout "mailer"
 end
