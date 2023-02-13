@@ -4,7 +4,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # will be used for the default url options in the mailer
-  config.force_ssl = true
+  # config.force_ssl = true
 
   # Code is not reloaded between requests.
   config.cache_classes = true
