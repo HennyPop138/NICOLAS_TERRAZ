@@ -22,7 +22,8 @@ class PagesController < ApplicationController
                       email: params[:email],
                       name: params[:name],
                       tel: params[:tel],
-                      subject: params[:subject] }
+                      subject: params[:subject],
+                      intervention: params[:intervention] }
     ContactMailer.contact(contact_infos).deliver_now
     flash[:alert] = 'Votre demande de contact a bien été envoyée, nous vous répondrons dans les plus brefs délais.'
     redirect_to confirmation_path
