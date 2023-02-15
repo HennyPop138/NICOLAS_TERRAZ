@@ -42,7 +42,7 @@
 
 /* DESKTOP */
 @media screen
-and (min-device-width: 1200px) {
+and (min-width: 1024px) {
   .button {
     padding: 15px 25px;
   }
@@ -50,8 +50,7 @@ and (min-device-width: 1200px) {
 
 /* MOBILE */
 @media screen
-and (min-device-width: 375px)
-and (max-device-width: 1200px) {
+and (max-width: 1024px) {
   .button {
     padding: 8px 10px;
   }

@@ -162,8 +162,9 @@ nav.navmobile ul li:hover {
   }
 }
 
+/* DESKTOP */
 @media only screen
-and (min-device-width: 1200px) {
+and (min-width: 1024px) {
   nav.navmobile {
     display: none;
   }
@@ -173,9 +174,9 @@ and (min-device-width: 1200px) {
   }
 }
 
+/* MOBILE */
 @media only screen
-and (min-device-width: 375px)
-and (max-device-width: 950px) {
+and (max-width: 1024px) {
   .top-bar {
     display: none;
   }
