@@ -7,12 +7,10 @@ and (min-width: 1024px) {
     justify-content: space-between;
     align-items: center;
     color: $dark-blue;
-
     .logo-bleu {
       width: 30vh;
     }
   }
-
   .image-robinet {
     width: 30%;
     object-fit: cover;
@@ -21,21 +19,18 @@ and (min-width: 1024px) {
     top: 30vh;
     z-index: 0;
   }
-
   .bottom-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .content {
     align-self: flex-start;
     margin: 20vh;
     color: $dark-blue;
     z-index: 1;
   }
-
   .nav-cards {
     display: flex;
     justify-content: space-between;
@@ -43,7 +38,6 @@ and (min-width: 1024px) {
     margin: 0 20vh;
     margin-bottom: 20vh;
   }
-
   .nav-card {
     width: 30%;
     background-color: $white;
@@ -54,39 +48,32 @@ and (min-width: 1024px) {
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 0.15s ease-in-out;
-
     .orange-card {
       display: none;
     }
-
     img {
       width: 50%;
       height: 50%;
       object-fit: contain;
     }
-
     h2 {
       font-size: 2vw;
       font-weight: 400;
     }
   }
-
   .nav-card:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
     transform: translateY(2px);
     color: $orange;
     cursor: pointer;
-
     img {
       width: 50%;
       height: 50%;
       object-fit: contain;
     }
-
     .blue-card {
       display: none;
     }
-
     .orange-card {
       display: inline;
     }
@@ -104,21 +91,18 @@ and (max-width: 1024px) {
     top: 20vh;
     z-index: 0;
   }
-
   .bottom-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .content {
     align-self: flex-start;
     margin: 7vh 2vh;
     color: $dark-blue;
     z-index: 1;
   }
-
   .nav-cards {
     display: flex;
     justify-content: space-between;
@@ -130,7 +114,6 @@ and (max-width: 1024px) {
       margin-top: 1vh;
     }
   }
-
   .nav-card {
     width: 30%;
     background-color: $white;
@@ -141,42 +124,34 @@ and (max-width: 1024px) {
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 0.15s ease-in-out;
-
     .orange-card {
       display: none;
     }
-
     img {
       width: 50%;
       height: 50%;
       object-fit: contain;
     }
-
     h2 {
       font-size: 24px;
       font-weight: 400;
     }
   }
-
   .nav-card:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
     transform: translateY(2px);
     color: $orange;
     cursor: pointer;
-
     img {
       width: 50%;
       height: 50%;
       object-fit: contain;
     }
-
     .blue-card {
       display: none;
     }
-
     .orange-card {
       display: inline;
     }
-
   }
 }
