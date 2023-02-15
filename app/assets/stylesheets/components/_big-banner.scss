@@ -1,6 +1,6 @@
 /* DESKTOP */
 @media screen
-and (min-device-width: 1200px) {
+and (min-width: 1024px) {
   .top-bar {
     width: 100%;
     display: flex;
@@ -96,9 +96,7 @@ and (min-device-width: 1200px) {
 
 /* MOBILE */
 @media screen
-and (min-device-width: 375px)
-and (max-device-width: 1200px) {
-
+and (max-width: 1024px) {
   .image-robinet {
     width: 30%;
     object-fit: cover;
