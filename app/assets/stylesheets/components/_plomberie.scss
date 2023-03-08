@@ -1,11 +1,10 @@
 /* DESKTOP */
 @media screen
-and (min-device-width: 1200px) {
+and (min-width: 1024px) {
   .plomberie {
     text-align: justify;
     margin: 10vh 20vh;
     float:right;
-
     .plomberie-img {
       width: 30vh;
       float:left;
@@ -17,13 +16,11 @@ and (min-device-width: 1200px) {
 
 /* MOBILE */
 @media screen
-and (min-device-width: 375px)
-and (max-device-width: 1200px) {
+and (max-width: 1024px) {
   .plomberie {
     text-align: justify;
     margin: 4vh 5vh;
     float:right;
-
     .plomberie-img {
       float:left;
       width: 15vh;

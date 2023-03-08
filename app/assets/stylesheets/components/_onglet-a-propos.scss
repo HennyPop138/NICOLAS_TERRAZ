@@ -1,6 +1,6 @@
 /* DESKTOP */
 @media screen
-and (min-device-width: 1200px) {
+and (min-width: 1024px) {
   .txt {
     margin: 10vh 20vh 10vh;
     text-align: justify;
@@ -12,8 +12,7 @@ and (min-device-width: 1200px) {
 
 /* MOBILE */
 @media screen
-and (min-device-width: 375px)
-and (max-device-width: 1200px) {
+and (max-width: 1024px) {
   .txt {
     margin: 4vh 5vh;
     text-align: justify;
