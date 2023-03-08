@@ -14,11 +14,14 @@
     align-items: center;
     padding: 10px 30px 10px;
     p {
-      color: whitesmoke;
-      opacity: 70%;
+      color: $dark-blue;
+      // opacity: 70%;
       text-align: center;
       margin: 0;
       font-size: 0.8em;
+    }
+    i {
+      color: $dark-blue;
     }
   }
 
@@ -41,15 +44,19 @@ and (min-device-width: 1200px) {
       p {
         font-size: 0.8em;
         line-height: 2.5em;
-        opacity: 60%;
+        // opacity: 60%;
         a {
           text-decoration: none;
-          color: $black;
+          color: $dark-blue;
           :hover {
             text-decoration: none;
-            color: $black;
+            color: $dark-blue;
           }
         }
+      }
+
+      i {
+        color: $dark-blue;
       }
     }
   }
@@ -76,15 +83,19 @@ and (max-device-width: 1200px) {
       p {
         font-size: 0.8em;
         line-height: 2.3em;
-        opacity: 60%;
+        // opacity: 60%;
         a {
           text-decoration: none;
-          color: $black;
+          color: $dark-blue;
           :hover {
             text-decoration: none;
-            color: $black;
+            color: $dark-blue;
           }
         }
+      }
+
+      i {
+        color: $dark-blue;
       }
     }
   }

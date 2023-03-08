@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'confirmation', to: 'pages#confirmation'
   post 'send_contact', to: 'pages#send_contact'
+
+  resources :posts, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 end
