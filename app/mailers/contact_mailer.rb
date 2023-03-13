@@ -6,6 +6,8 @@ class ContactMailer < ApplicationMailer
     @tel = contact_infos[:tel]
     @subject = contact_infos[:subject]
     @intervention = contact_infos[:intervention]
-    mail(to: 'anan.wav@gmail.com', subject: @subject)
+    mail(to: 'Tipcc@orange.fr', subject: @subject)
+
+
   end
 end

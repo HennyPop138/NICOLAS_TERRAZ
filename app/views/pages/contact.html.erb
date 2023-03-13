@@ -66,6 +66,21 @@
       <button type="submit" class="button blue-button">Envoyer</button>
     </form>
   </div>
+
+  <div id='map' style='width: 100vw; height: 60vh;'
+    data-controller="map"
+    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+  <%# <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGVubnlwb3AiLCJhIjoiY2xmNnZrejNrMTh1bzN3b2N4dHUwN2xoMiJ9.Fs9afS17fE6FucsoRKfQEA';
+    const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v12', // style URL
+    center: [5.407353, 43.254670], // starting position [lng, lat]
+    zoom: 13, // starting zoom
+    });
+
+  </script> %>
 </div>
 
 <%# FOOTER %>

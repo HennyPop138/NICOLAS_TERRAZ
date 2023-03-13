@@ -13,8 +13,8 @@
     align-items: center;
     padding: 10px 30px 10px;
     p {
-      color: $dark-blue;
-      // opacity: 70%;
+      color: $white;
+      opacity: 70%;
       text-align: center;
       margin: 0;
       font-size: 0.8em;
@@ -28,7 +28,7 @@
 @media screen
 and (min-device-width: 1200px) {
   footer {
-    margin-top: 20vh;
+    margin-top: 10vh;
 
     .column-footer {
       margin: 4vh;
@@ -38,10 +38,12 @@ and (min-device-width: 1200px) {
         text-transform: uppercase;
         font-size: 1.1em;
         margin-bottom: 3vh;
+        color: $dark-blue;
       }
       p {
         font-size: 0.8em;
         line-height: 2.5em;
+        color: $dark-blue;
         // opacity: 60%;
         a {
           text-decoration: none;
@@ -76,11 +78,13 @@ and (max-device-width: 1200px) {
         font-size: 1em;
         margin-bottom: 1vh;
         margin-top: 2vh;
+        color: $dark-blue;
       }
       p {
         font-size: 0.8em;
         line-height: 2.3em;
         // opacity: 60%;
+        color: $dark-blue;
         a {
           text-decoration: none;
           color: $dark-blue;
