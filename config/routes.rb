@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   get 'confirmation', to: 'pages#confirmation'
   post 'send_contact', to: 'pages#send_contact'
 
-  resources :posts, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  scope '/actualites' do
+    resources :posts, path: ''
+  end
 end

@@ -1,0 +1,38 @@
+<div class="black-banner">
+  <p>lundi au jeudi 8h - 18h, vendredi 8h - 17h</p>
+  <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;<a href="tel: 07 60 04 25 64">07 60 04 25 64</a></p>
+</div>
+
+<div class="radient-bg">
+  <%= render "shared/top-bar" %>
+  <%= render "shared/menu-burger" %>
+
+  <div class="container">
+    <div class="post-show">
+
+      <div class="show-img">
+        <%= cl_image_tag @post.photo.key, class: "post-photo" %>
+      </div>
+
+
+      <div class="show-content">
+        <div class="icons">
+          <%= link_to edit_post_path(@post), class: "button show-button edit-btn", data: { turbo_method: :edit } do %>
+            <p>Modifier<i class="fa-solid fa-edit"></i></p>
+          <% end %>
+          <%= link_to post_path(@post), class: "button show-button delete-btn", data: { turbo_method: :delete, turbo_confirm: 'Voulez-vous vraiment supprimer cet article ?' } do %>
+            <p>Supprimer<i class="fa-solid fa-trash"></i></p>
+          <% end %>
+        </div>
+        <h1><%= @post.title %></h1>
+        <p id="post-time-stamp">Le <%= @post.created_at.strftime("%d/%m/%Y") %></p>
+        <p><%= @post.description %></p>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<%= render "shared/footer" %>

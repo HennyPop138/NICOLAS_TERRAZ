@@ -1,11 +1,12 @@
 class PostsController < ApplicationController
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
   def index
     @posts = Post.all
   end
 
   def show
-    @post = Post.find(post_params)
+    @post = Post.find(params[:id])
   end
 
   def new
@@ -14,39 +15,41 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-
     if @post.save
-      redirect_to @post
+      redirect_to posts_path
     else
       render 'new'
     end
   end
 
   def edit
-    @post = Post.find(post_params)
+    @post = Post.find(params[:id])
   end
 
   def update
-    @post = Post.find(post_params)
+    @post = Post.find(params[:id])
 
     if @post.update(post_params)
-      redirect_to @post
+      redirect_to posts_path
     else
       render 'edit'
     end
   end
 
   def destroy
-    @post = Post.find(post_params)
+    @post = Post.find(params[:id])
     @post.destroy
 
     redirect_to posts_path
   end
 
   private
-    def post_params
-      params.require(:post).permit(:title, :description)
-    end
 
+  def post_params
+    params.require(:post).permit(:title, :description, :photo)
+  end
 
+  def record_not_found
+    redirect_to posts_path
+  end
 end

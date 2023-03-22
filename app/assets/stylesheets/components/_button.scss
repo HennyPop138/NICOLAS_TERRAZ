@@ -3,7 +3,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  border-radius: 5px;
+  border-radius: 4px;
   box-sizing: border-box;
   color: $white;
   cursor: pointer;
@@ -19,7 +19,7 @@
 }
 
 .button:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
   transform: translateY(-2px);
   color: $white;
 }
@@ -53,4 +53,40 @@ and (max-width: 1024px) {
   .button {
     padding: 8px 10px;
   }
+}
+
+#read-more-btn {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $dark-blue;
+}
+
+.show-button {
+  background-color: $black;
+  color: $white;
+  margin-bottom: 12px;
+
+  p {
+    margin: 0;
+  }
+
+  i {
+    margin-left: 5px;
+    color: $white !important;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+
+    i {
+      color: $black !important;
+    }
+  }
+
+}
+
+.delete-btn {
+  background-color: #CC0100;
 }

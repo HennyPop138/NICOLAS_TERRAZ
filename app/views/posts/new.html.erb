@@ -1,0 +1,15 @@
+<div class="radient-bg">
+  <%= render "shared/menu-burger"%>
+  <%= render "shared/top-bar" %>
+
+  <div class="container contact-form">
+    <h1>Nouvel article</h1>
+    <%= form_with model: @post do |f| %>
+      <%= f.text_field :title, class: "form-control mb-1", placeholder: "Titre de l'article" %>
+      <%= f.text_area :description, class: "form-control mb-1", wrap: "hard", placeholder: "Texte principal de l'article" %>
+      <%= f.file_field :photo, accept: 'image/png,image/jpeg,image/jpg', class: "form-control mb-1" %>
+
+      <%= f.submit "PUBLIER", class: "button blue-button" %>
+    <% end %>
+  </div>
+</div>
