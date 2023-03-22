@@ -10,7 +10,9 @@
   <div class="task-list">
     <div class="post-cards-header">
       <h1>Actualités</h1>
-      <%= link_to "Nouveau post", new_post_path, class: "button blue-button" %>
+      <% if user_signed_in? %>
+        <%= link_to "Nouveau post", new_post_path, class: "button blue-button" %>
+      <% end %>
     </div>
 
     <div class="post-cards">

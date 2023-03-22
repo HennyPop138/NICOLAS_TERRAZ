@@ -16,6 +16,17 @@
       <li><%= link_to "CHAUFFAGE", chauffage_path %></li>
       <li><%= link_to "CLIMATISATION", climatisation_path %></li>
       <li><%= link_to "CONTACT", contact_path %></li>
+      <li>
+        <% if user_signed_in? %>
+          <%= link_to destroy_user_session_path, data: {turbo_method: :delete} do %>
+            <i class="fa-solid fa-sign-out"></i>
+          <% end %>
+        <% else %>
+          <%= link_to new_user_session_path do %>
+            <i class="fa-solid fa-user"></i>
+          <% end %>
+        <% end %>
+      </li>
     </ul>
   </div>
 </nav>

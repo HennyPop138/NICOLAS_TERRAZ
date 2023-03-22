@@ -17,11 +17,13 @@
 
       <div class="show-content">
         <div class="icons">
-          <%= link_to edit_post_path(@post), class: "button show-button edit-btn", data: { turbo_method: :edit } do %>
-            <p>Modifier<i class="fa-solid fa-edit"></i></p>
-          <% end %>
-          <%= link_to post_path(@post), class: "button show-button delete-btn", data: { turbo_method: :delete, turbo_confirm: 'Voulez-vous vraiment supprimer cet article ?' } do %>
-            <p>Supprimer<i class="fa-solid fa-trash"></i></p>
+          <% if user_signed_in? %>
+            <%= link_to edit_post_path(@post), class: "button show-button edit-btn", data: { turbo_method: :edit } do %>
+              <p>Modifier<i class="fa-solid fa-edit"></i></p>
+            <% end %>
+            <%= link_to post_path(@post), class: "button show-button delete-btn", data: { turbo_method: :delete, turbo_confirm: 'Voulez-vous vraiment supprimer cet article ?' } do %>
+              <p>Supprimer<i class="fa-solid fa-trash"></i></p>
+            <% end %>
           <% end %>
         </div>
         <h1><%= @post.title %></h1>
