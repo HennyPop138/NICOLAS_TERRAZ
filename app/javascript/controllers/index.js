@@ -10,8 +10,5 @@ application.register("hello", HelloController)
 import MapController from "./map_controller"
 application.register("map", MapController)
 
-import MeatballsController from "./meatballs_controller"
-application.register("meatballs", MeatballsController)
-
 import OpenBurgerMenuController from "./open_burger_menu_controller"
 application.register("open-burger-menu", OpenBurgerMenuController)
