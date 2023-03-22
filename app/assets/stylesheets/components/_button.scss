@@ -5,7 +5,7 @@
   font-size: 14px;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $white !important;
+  color: $white;
   cursor: pointer;
   display: inline-block;
   text-align: center;
@@ -37,6 +37,7 @@
 .blue-button {
   background-color: $dark-blue !important;
   border: 2px solid $dark-blue !important;
+  color: $white !important;
 }
 
 /* DESKTOP */
