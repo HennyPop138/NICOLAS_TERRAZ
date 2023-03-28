@@ -13,6 +13,8 @@ Post.destroy_all
 User.destroy_all
 
 User.create(email: 'terraz.plomberie@gmail.com', password: 'TerrazNico139!')
+User.create(email: 'tipcc@orange.fr', password: 'TerrazNico139!')
+User.create(email: 'nicolas.terraz@orange.fr', password: 'Manululu1!')
 
 post1 = Post.create(title: 'Nouvelle plomberie pour Mme Safran !', description: "Lors de notre dernière intervention, nous avons effectué un changement de plomberie chez une cliente qui avait des problèmes avec ses tuyaux d'eau. Nous avons commencé par vérifier la pression de l'eau dans sa maison en utilisant un manomètre. Nous avons ensuite déterminé que la cause du problème était une obstruction dans la tuyauterie. Nous avons utilisé une caméra d'inspection pour localiser le bouchon et avons utilisé une ventouse pour le dégager.
                                                                               Après avoir retiré le bouchon, nous avons procédé au remplacement des tuyaux endommagés. Nous avons utilisé du tuyau en PVC pour remplacer les tuyaux en cuivre usagés. Nous avons également remplacé les raccords de plomberie qui étaient corrodés.
