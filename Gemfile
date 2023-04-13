@@ -18,7 +18,7 @@ gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
 
 # Use postgresql as the database for Active Record
-gem "pg", "1.1.4"
+gem "pg", "1.3.5"
 
 # Postmark for Rails
 gem 'postmark-rails'
